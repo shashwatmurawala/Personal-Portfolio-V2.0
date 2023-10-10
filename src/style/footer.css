@@ -1,0 +1,50 @@
+.footer{
+    position: absolute;
+    top: 380.625vw;
+    width: 99%;
+    font-family: 'Roboto';
+}
+
+.foo-img{
+    position: absolute;
+    width: 102.2vw;
+    height: 8vw;
+    margin-left: -2vw;
+    margin-bottom: -1vw;
+    z-index: -10;
+}
+
+.foo-meat{
+    display: flex;
+    justify-content: flex-end;
+    gap: 23vw;
+    align-items: center;
+    height: 8vw;
+    margin-bottom: -1vw;
+    width: 95vw;
+}
+
+.foo-text{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.953125vw;
+    line-height: 2.34375vw;
+
+    color: #ABABAB;
+}
+
+.foo-right{
+    display: flex;
+    gap: 1.5vw;
+    margin-top: .4vw;
+}
+
+.foo-icon{
+    transition: 500ms;
+    opacity: .5;
+}
+
+.foo-icon:hover{
+    opacity: 1;
+    transform: translateY(-0.390625vw);
+}

@@ -1,6 +1,6 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaGithub, FaInstagram, FaHtml5, FaPython, FaCss3, FaJs, FaLinux, FaBootstrap, FaJava } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs, SiCss3, SiCplusplus, SiNodedotjs, SiTensorflow, SiNumpy, SiOpencv, SiPandas, SiLinux, SiGit, SiKeras, SiVisualstudiocode, SiVisualstudio, SiMongodb, SiPowerbi, SiMysql, SiMicrosoftsqlserver, SiAdobephotoshop, SiMicrosoftoffice, SiNotion, SiCockroachlabs } from "react-icons/si";
+import { FaReact, FaHtml5, FaPython, FaCss3, FaJs, FaBootstrap, FaJava } from "react-icons/fa";
+import { SiFigma, SiCplusplus, SiNodedotjs, SiTensorflow, SiNumpy, SiOpencv, SiLinux, SiGit,  SiVisualstudiocode, SiMongodb, SiPowerbi, SiMysql, SiMicrosoftsqlserver, SiAdobephotoshop, SiNotion, SiCockroachlabs } from "react-icons/si";
 import { BsFiletypeSql } from "react-icons/bs";
 import { FadeIn } from "./FadeIn";
 

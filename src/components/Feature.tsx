@@ -31,9 +31,7 @@ const Feature = () => {
           />
           <Card2
             title="GitHub Education"
-            des={
-              <>🧩Mission accomplished!! #HackconXI @github @MLHacks<br />
-              <br /></>}
+            des= "🧩Mission accomplished!! #HackconXI @github @MLHacks"
             icon={<RiTwitterFill />}
           />
         </div>

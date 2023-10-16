@@ -67,9 +67,6 @@ const Contact = () => {
           setSubject("");
           setMessage("");
         })
-        .catch((err) => {
-          // Handle error
-        });
     }
   };
   return (

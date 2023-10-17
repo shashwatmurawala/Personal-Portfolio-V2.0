@@ -1,7 +1,7 @@
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Feature from "./components/Feature";
-import Footer from "./components/Footer";
+import FooterBottom from "./components/FooterBottom";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
@@ -19,7 +19,7 @@ function App() {
           <Resume />
           <Testimonial />
           <Contact />
-          <Footer />
+          <FooterBottom />
         </div>
       </div>
     </main>

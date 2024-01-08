@@ -24,8 +24,8 @@ const LeftBanner = () => {
           <Cursor cursorStyle="|" cursorColor="#ff014f" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
-        I'm a first-year Computer Science student at the University of Waterloo, deeply 
-        passionate about disruptive technologies, neuroscience, and AI. My ultimate goal 
+        I'm a second-year Computer Science student at the University of Waterloo, deeply 
+        passionate about disruptive technologies, neuroscience, and AI. I am specializing in Artificial Intelligence, Human Computer Interface, and Software Engineering, as well as minoring in Psycology and Cognitice Science. My ultimate goal 
         is to pursue a career in AI development and research to create technology for the betterment humanity.
         </p>
       </div>

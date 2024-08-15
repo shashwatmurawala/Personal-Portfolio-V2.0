@@ -24,9 +24,11 @@ const LeftBanner = () => {
           <Cursor cursorStyle="|" cursorColor="#ff014f" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wider">
-        I'm a second-year Computer Science student at the University of Waterloo, deeply 
-        passionate about disruptive technologies, neuroscience, and AI. I am specializing in Artificial Intelligence, Human Computer Interface, and Software Engineering, as well as minoring in Psycology and Cognitice Science. My ultimate goal 
-        is to pursue a career in AI development and research to create technology for the betterment humanity.
+        👋 Hello! I'm Shashwat, a Computer Science and Psychology Double Major student at the University of Waterloo. I thrive on the challenge of creating software solutions that not only solve technical problems but also improve the lives of users.<br /><br />
+
+        💡 With my minor in Cognitive Science, I enjoy exploring the intersection of technology and human behavior. I believe technology can be a powerful tool for positive change, and I aspire to use my skills to make a real impact.<br /><br />
+
+        ⭐️ If you'd like to connect, collaborate, or discuss exciting tech projects, I'd love to hear from you. I'm always open to learning and exploring new opportunities!
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">

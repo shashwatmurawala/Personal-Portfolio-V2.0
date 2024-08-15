@@ -13,7 +13,7 @@ const Experience = () => {
           <p className="text-sm text-designColor tracking-[4px]">2021 - Present</p>
           <h2 className="text-3xl md:text-4xl font-bold">Work Experience</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[2000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full h-[1250px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Software Developer"
             subTitle="Dayforce (May 2024 - Present)"
@@ -23,17 +23,6 @@ const Experience = () => {
                 • Remediated 100+ security vulnerabilities identified by Veracode and SonarQube, ensuring compliance with industry standards and enhancing application security and code quality.<br />
                 • Designed and implemented a high-performance streaming application, delivering real-time data processing and ensuring seamless user experience with scalable architecture, supporting 500K+ concurrent users.<br />
                 • Refactored and optimized existing C#/.NET codebases, enhancing performance by 30%, maintainability, and scalability by applying SOLID principles and reducing technical debt by 40%.
-              </>
-            }
-          />
-          <ResumeCard
-            title="Math Orientation Manager"
-            subTitle="University of Waterloo (Nov 2023 - Present)"
-            result="Waterloo"
-            des={
-              <>
-                • Worked alongside a team to guide Orientation leaders, orchestrating their training, scheduling, and planning for a range of events.<br />
-                • Completed all administrative tasks strictly in a strict manner following an outline from Waterloo Orientation to ensure preplanning for Orientation week was complete.
               </>
             }
           />
@@ -68,43 +57,30 @@ const Experience = () => {
           <p className="text-sm text-designColor tracking-[4px]">2022 - Present</p>
           <h2 className="text-3xl md:text-4xl font-bold">Extracurricular Experience</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[2000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="mt-6 lgl:mt-14 w-full h-[1250px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
         <ResumeCard
-            title="Full Stack Web Development Internship Program"
-            subTitle="Edureka (Sep 2023 - Dec 2023)"
+            title="Board of Directors"
+            subTitle="Math Endowment Fund (Apr 2024 - Present)"
             result="Remote"
             des={
               <>
-                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
-                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
-                • Currently gaining expertise in MongoDB for effective data management.
+                • Engaging with stakeholders, including university faculty, alumni, and donors, to communicate the impact of the fund and foster continued support, resulting in a 25% increase in donor retention.<br />
+                • Collaborating with fellow board members to develop and implement investment strategies aimed at maximizing returns while mitigating risks.<br />
+                • Reviewing financial reports and performance metrics to assess the fund's progress towards its goals, achieving an average annual return of 8%.
               </>
             }
           />  
           <ResumeCard
-            title="Full Stack Web Development Internship Program"
-            subTitle="Edureka (Sep 2023 - Dec 2023)"
-            result="Remote"
+            title="Math Orientation Manager"
+            subTitle="University of Waterloo (Nov 2023 - Present)"
+            result="Waterloo"
             des={
               <>
-                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
-                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
-                • Currently gaining expertise in MongoDB for effective data management.
+                • Worked alongside a team to guide Orientation leaders, orchestrating their training, scheduling, and planning for a range of events.<br />
+                • Completed all administrative tasks strictly in a strict manner following an outline from Waterloo Orientation to ensure preplanning for Orientation week was complete.
               </>
             }
-          />  
-          <ResumeCard
-            title="Full Stack Web Development Internship Program"
-            subTitle="Edureka (Sep 2023 - Dec 2023)"
-            result="Remote"
-            des={
-              <>
-                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
-                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
-                • Currently gaining expertise in MongoDB for effective data management.
-              </>
-            }
-          />  
+          /> 
           <ResumeCard
             title="Full Stack Web Development Internship Program"
             subTitle="Edureka (Sep 2023 - Dec 2023)"

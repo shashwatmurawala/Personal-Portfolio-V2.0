@@ -18,15 +18,13 @@ const Feature = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
           <Card
             title="Resume"
-            des="Explore my qualifications, work history, and skills in detail. Download 
-            my resume to learn more about me."
+            des="Explore my qualifications, work history, and skills in detail."
             icon={<FaSuitcase />}
           />
           <Card1
             title="Co-op Blog"
             des="
-            #MyCoopExperience is a student-written blog offering insights and 
-            advice for other co-op students."
+            #MyCoopExperience"
             icon={<ImBlog />}
           />
           <Card2

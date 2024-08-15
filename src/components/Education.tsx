@@ -20,7 +20,7 @@ const Education = () => {
             title="Bachelor of CS"
             subTitle="University of Waterloo"
             result="2022 - Present"
-            des="Currently pursuing Bachelor of Computer Science Degree at the University of Waterloo's Cheriton School of Computer Science."
+            des="Currently pursuing BCS. Computer Science and Psychology Double Major with a Cognitive Science Minor at the University of Waterloo."
           />
           <ResumeCard
             title="Specialized Program"
@@ -45,11 +45,18 @@ const Education = () => {
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <CertificateCard
-            title="Google Analytics for Beginners"
-            subTitle="Google Analytics"
-            result="2023"
-            des="Google Analytics for Beginners teaches users to set up accounts, track data, analyze reports, and configure goals and campaigns in Google Analytics."
-            certificateLink="https://analytics.google.com/analytics/academy/certificate/gjM46DXZToeYmWGOUk3PKA"
+            title="Security Brown Belt Certification"
+            subTitle="Dayforce"
+            result="2024"
+            des="The Security Brown Belt Certification offers advanced cybersecurity expertise in complex threat analysis and strategic risk management."
+            certificateLink="https://www.linkedin.com/in/shashwatmurawala/overlay/1723046911461/single-media-viewer/?profileId=ACoAADxmUrkBsper5p9rPHuQuzXEWDAvXBZa-68"
+          />
+          <CertificateCard
+            title="Security Green Belt Certification"
+            subTitle="Dayforce"
+            result="2024"
+            des="The Security Green Belt Certification provides intermediate cybersecurity skills to protect organizational assets."
+            certificateLink="https://www.linkedin.com/in/shashwatmurawala/overlay/1716861365788/single-media-viewer/?profileId=ACoAADxmUrkBsper5p9rPHuQuzXEWDAvXBZa-68"
           />
           <CertificateCard
             title="Introduction to Statistics"
@@ -57,13 +64,6 @@ const Education = () => {
             result="2023"
             des="Stanford's Introduction to Statistics course imparts crucial statistical thinking skills for data analysis and machine learning."
             certificateLink="https://www.coursera.org/account/accomplishments/certificate/ASGLNZJXDU2W"
-          />
-          <CertificateCard
-            title="The Fundamentals of Digital Marketing"
-            subTitle="Google Digital Garage"
-            result="2023"
-            des="This course allows you to master the basics of digital marketing accredited by Interactive Advertising Bureau Europe and The Open University."
-            certificateLink="https://drive.google.com/file/d/1vk7ArQM9w_nmPoJ8kkJvdle2N4mJz0FF/view?usp=sharing"
           />
         </div>
       </div>

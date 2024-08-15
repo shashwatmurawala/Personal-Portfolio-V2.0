@@ -29,7 +29,7 @@ const Card = ({ title, des, icon }: Props) => {
             </h2>
             <p className="base">{des}</p>
             <span className="text-2xl text-designColor">
-              <a href= "https://drive.google.com/file/d/1MZOjL3c8Dnuy7th3ohqfwVsvTba-u0ad/view?usp=sharing">
+              <a href= "https://docs.google.com/document/d/1pJWbDeNQZy5gRCrD6VbjzIpoG8d49ULJAqehUc5hXEc/edit?usp=sharing">
                 <HiArrowRight />
               </a>
             </span>

@@ -12,7 +12,7 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-white">Shashwat Murawala</h3>
         <p className="text-lg font-normal text-gray-400">
-          Computer Science Student at the University of Waterloo
+          Computer Science  and Psychology Student at the University of Waterloo
         </p>
         <p className="text-base text-gray-400 tracking-wide">
         I'd Love To Hear From You.
@@ -21,7 +21,7 @@ const ContactLeft = () => {
           Phone: <span className="text-lightText">647-772-0320</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">skmurawala@gmail.com</span>
+          Email: <span className="text-lightText">murawala.shashwat@gmail.com</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">

@@ -15,42 +15,40 @@ const Experience = () => {
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[2000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Full Stack Web Development Internship Program"
-            subTitle="Edureka (Sep 2023 - Present)"
-            result="Remote"
+            title="Software Developer"
+            subTitle="Dayforce (May 2024 - Present)"
+            result="North York"
             des={
               <>
-                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
-                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
-                • Currently gaining expertise in MongoDB for effective data management.
+                • Remediated 100+ security vulnerabilities identified by Veracode and SonarQube, ensuring compliance with industry standards and enhancing application security and code quality.<br />
+                • Designed and implemented a high-performance streaming application, delivering real-time data processing and ensuring seamless user experience with scalable architecture, supporting 500K+ concurrent users.<br />
+                • Refactored and optimized existing C#/.NET codebases, enhancing performance by 30%, maintainability, and scalability by applying SOLID principles and reducing technical debt by 40%.
               </>
             }
           />
           <ResumeCard
-            title="Campus Ambassador"
-            subTitle="Velocity (Aug 2023 - Present)"
+            title="Math Orientation Manager"
+            subTitle="University of Waterloo (Nov 2023 - Present)"
             result="Waterloo"
             des={
               <>
-                • Collaborated on event planning to foster entrepreneurial thinking.<br />
-                • Cultivated a sense of community among like-minded students
+                • Worked alongside a team to guide Orientation leaders, orchestrating their training, scheduling, and planning for a range of events.<br />
+                • Completed all administrative tasks strictly in a strict manner following an outline from Waterloo Orientation to ensure preplanning for Orientation week was complete.
               </>
             }
           />
           <ResumeCard
-            title="Math Ambassador"
-            subTitle="University of Waterloo (Aug 2023 - Present)"
-            result="Waterloo"
+            title="Soccer Referee"
+            subTitle="Ontario Soccer (Jan 2024 - Present)"
+            result="Ontario"
             des={
               <>
-                • Emails with prospective students<br />
-                • Mentorship<br />
-                • Outreach and engagement programming<br />
-                • Communications outreach
+                • Conducted fair and unbiased officiating for soccer matches, ensuring adherence to league rules and regulations.<br />
+                • Applied a comprehensive understanding of soccer rules to make prompt and accurate decisions during gameplay, maintaining a high standard of sportsmanship and integrity.<br />
+                • Demonstrated strong interpersonal skills in resolving disputes and conflicts between players fostering a positive and inclusive atmosphere.
               </>
             }
-          />
-          
+          />        
           <ResumeCard
             title="Data Analyst"
             subTitle="JANA Corporation (May 2023 - Aug 2023)"
@@ -63,112 +61,62 @@ const Experience = () => {
               </>
             }
           />
-          <ResumeCard
-            title="Store Associate"
-            subTitle="University of Waterloo (Aug 2022 - Jan 2023)"
-            result="Waterloo"
-            des={
-              <>
-                • Google's hiring process is an important part of our culture.<br />
-                • Googlers care deeply about their teams and the people who make them up.
-              </>
-            }
-          />
-          <ResumeCard
-            title="Summer Student, Subway Janitor"
-            subTitle="Toronto Transit Commission (Jul 2022 - Aug 2022)"
-            result="Toronto"
-            des={
-              <>
-                • Maintained a safe and clean environment.<br />
-                • Completed detailed cleanings of closed subway stations overnight.
-              </>
-            }
-          />
-          <ResumeCard
-            title="Student Host"
-            subTitle="Ontario Science Centre (Dec 2021 - Jan 2022)"
-            result="North York"
-            des={
-              <>
-                • Provided customer service to a sufficient degree.<br />
-                • Enthusiastically and proactively engaged with visitors.
-              </>
-            }
-          />
         </div>
       </div>
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2022 - Present</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Organization Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Extracurricular Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[2000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Head Delegate (University of Waterloo)"
-            subTitle="CUSEC: Canadian University Software Engineering Conference (Apr 2023 - Present)"
-            result="Waterloo"
+        <ResumeCard
+            title="Full Stack Web Development Internship Program"
+            subTitle="Edureka (Sep 2023 - Dec 2023)"
+            result="Remote"
             des={
               <>
-                • Promoting CUSEC to students, building relationships with clubs/societies and recruiting delegates.<br />
-                • Assisting in organizing travel and accommodations for the group attending the conference.
+                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
+                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
+                • Currently gaining expertise in MongoDB for effective data management.
               </>
             }
-          />
+          />  
           <ResumeCard
-            title="Outreach Coordinator"
-            subTitle="University of Waterloo Data Science Club (Apr 2023 - Present)"
-            result="Waterloo"
+            title="Full Stack Web Development Internship Program"
+            subTitle="Edureka (Sep 2023 - Dec 2023)"
+            result="Remote"
             des={
               <>
-                • Responsible for collaborations and sponsorships.<br />
-                • Actively contacting companies, faculty, and other organizations for sponsorships and collaborations.<br />
-                • Creating sponsorship packages and pitch DSC to potential collaborators.
+                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
+                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
+                • Currently gaining expertise in MongoDB for effective data management.
               </>
             }
-          />
+          />  
           <ResumeCard
-            title="Office Worker"
-            subTitle="University of Waterloo MATHSOC (Sep 2023 - Present)"
-            result="Waterloo"
+            title="Full Stack Web Development Internship Program"
+            subTitle="Edureka (Sep 2023 - Dec 2023)"
+            result="Remote"
             des={
               <>
-                • Committed to in-person collaboration within the MathSoc Office.<br />
-                • Maintained a customer-friendly atmosphere and supported office operations.
+                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
+                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
+                • Currently gaining expertise in MongoDB for effective data management.
               </>
             }
-          />
+          />  
           <ResumeCard
-            title="Head Pink Tie"
-            subTitle="University of Waterloo MATHSOC (Apr 2023 - Sep 2023)"
-            result="Waterloo"
+            title="Full Stack Web Development Internship Program"
+            subTitle="Edureka (Sep 2023 - Dec 2023)"
+            result="Remote"
             des={
               <>
-                • Co-leading First-Year students alongside other pink tie leaders.
+                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
+                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
+                • Currently gaining expertise in MongoDB for effective data management.
               </>
             }
-          />
-          <ResumeCard
-            title="Tie Guard"
-            subTitle="University of Waterloo MATHSOC (Apr 2023 - Sep 2023)"
-            result="Waterloo"
-            des={
-              <>
-                • Taking shifts at the math "Ask Me" booth and Tie Guard Tent.
-              </>
-            }
-          />
-          <ResumeCard
-            title="Cartoon Reviewer"
-            subTitle="University of Waterloo MATHSOC (Sep 2022 - Jun 2023)"
-            result="Waterloo"
-            des={
-              <>
-                • Evaluating and critiquing MathSoc comics before release.<br />
-                • Providing insights and context about the comics.
-              </>
-            }
-          />
+          />  
         </div>
       </div>
     </motion.div>

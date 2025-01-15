@@ -16,7 +16,7 @@ const Experience = () => {
         <div className="mt-6 lgl:mt-14 w-full h-[1250px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Software Developer"
-            subTitle="Dayforce (May 2024 - Present)"
+            subTitle="Dayforce (May 2024 - Dec 2024)"
             result="North York"
             des={
               <>
@@ -25,19 +25,7 @@ const Experience = () => {
                 • Refactored and optimized existing C#/.NET codebases, enhancing performance by 30%, maintainability, and scalability by applying SOLID principles and reducing technical debt by 40%.
               </>
             }
-          />
-          <ResumeCard
-            title="Soccer Referee"
-            subTitle="Ontario Soccer (Jan 2024 - Present)"
-            result="Ontario"
-            des={
-              <>
-                • Conducted fair and unbiased officiating for soccer matches, ensuring adherence to league rules and regulations.<br />
-                • Applied a comprehensive understanding of soccer rules to make prompt and accurate decisions during gameplay, maintaining a high standard of sportsmanship and integrity.<br />
-                • Demonstrated strong interpersonal skills in resolving disputes and conflicts between players fostering a positive and inclusive atmosphere.
-              </>
-            }
-          />        
+          />     
           <ResumeCard
             title="Data Analyst"
             subTitle="JANA Corporation (May 2023 - Aug 2023)"
@@ -72,7 +60,7 @@ const Experience = () => {
           />  
           <ResumeCard
             title="Math Orientation Manager"
-            subTitle="University of Waterloo (Nov 2023 - Present)"
+            subTitle="University of Waterloo (Nov 2023 - Dec 2024)"
             result="Waterloo"
             des={
               <>

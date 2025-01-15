@@ -21,7 +21,7 @@ const ContactLeft = () => {
           Phone: <span className="text-lightText">647-772-0320</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">murawala.shashwat@gmail.com</span>
+          Email: <span className="text-lightText">smurawal@uwaterloo.ca</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">

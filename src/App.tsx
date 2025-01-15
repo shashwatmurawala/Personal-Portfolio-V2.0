@@ -5,7 +5,6 @@ import FooterBottom from "./components/FooterBottom";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
-import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
           <Feature />
           <Projects />
           <Resume />
-          <Testimonial />
           <Contact />
           <FooterBottom />
         </div>

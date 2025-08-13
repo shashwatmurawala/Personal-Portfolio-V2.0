@@ -1,5 +1,4 @@
 import Banner from "./components/Banner";
-import Contact from "./components/Contact";
 import Feature from "./components/Feature";
 import FooterBottom from "./components/FooterBottom";
 import Navbar from "./components/Navbar";
@@ -16,7 +15,6 @@ function App() {
           <Feature />
           <Projects />
           <Resume />
-          <Contact />
           <FooterBottom />
         </div>
       </div>

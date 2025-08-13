@@ -29,7 +29,7 @@ const Card1 = ({ title, des, icon }: Props) => {
             </h2>
             <p className="base">{des}</p>
             <span className="text-2xl text-designColor">
-              <a href= "https://uwaterloo.ca/co-operative-education/blog/post/decoding-challenges-data-world">
+              <a href= "https://www.linkedin.com/in/shashwatmurawala/">
                 <HiArrowRight />
               </a>
             </span>

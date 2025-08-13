@@ -1,4 +1,5 @@
 import { HiArrowRight } from "react-icons/hi";
+import resumePdf from "../assets/pdfs/ShashwatMurawala_Resume.pdf";
 
 interface Props {
   title: string;
@@ -29,7 +30,7 @@ const Card = ({ title, des, icon }: Props) => {
             </h2>
             <p className="base">{des}</p>
             <span className="text-2xl text-designColor">
-              <a href= "https://drive.google.com/drive/folders/1PZRmCMRe3ZGCALSiDO9Asu1p_n6qcv7-?usp=sharing">
+              <a href={resumePdf} target="_blank" rel="noopener noreferrer">
                 <HiArrowRight />
               </a>
             </span>

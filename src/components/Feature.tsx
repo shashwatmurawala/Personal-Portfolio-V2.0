@@ -1,6 +1,4 @@
-import { FaSuitcase } from "react-icons/fa";
-import { RiTwitterFill } from "react-icons/ri";
-import { ImBlog } from "react-icons/im";
+import { FaSuitcase, FaLinkedin, FaGithub } from "react-icons/fa";
 import Card from "./Card";
 import Card1 from "./Card1";
 import Title from "./Title";
@@ -22,15 +20,14 @@ const Feature = () => {
             icon={<FaSuitcase />}
           />
           <Card1
-            title="Co-op Blog"
-            des="
-            #MyCoopExperience"
-            icon={<ImBlog />}
+            title="LinkedIn"
+              des="Connect with me professionally and view my career journey."
+            icon={<FaLinkedin />}
           />
           <Card2
-            title="GitHub Education"
-            des= "🧩Mission accomplished!! #HackconXI @github @MLHacks"
-            icon={<RiTwitterFill />}
+            title="GitHub"
+            des="Check out my projects and contributions to open source."
+            icon={<FaGithub />}
           />
         </div>
       </FadeIn>

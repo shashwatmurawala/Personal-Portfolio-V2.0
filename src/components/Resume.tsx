@@ -6,9 +6,9 @@ import Experience from "./Experience";
 import { FadeIn } from "./FadeIn";
 
 const Resume = () => {
-  const [educationData, setEducationData] = useState<Boolean>(true);
-  const [skillData, setSkillData] = useState<Boolean>(false);
-  const [experienceData, setExperienceData] = useState<Boolean>(false);
+  const [educationData, setEducationData] = useState<boolean>(true);
+  const [skillData, setSkillData] = useState<boolean>(false);
+  const [experienceData, setExperienceData] = useState<boolean>(false);
   return (
     <section
       id="resume"
@@ -16,7 +16,7 @@ const Resume = () => {
     >
       <FadeIn>
         <div className="flex justify-center items-center text-center">
-          <Title title="5+ YEARS OF EXPERIENCE" des="My Resume" />
+          <Title title="5+ YEARS OF EXPERIENCE" des="My Journey" />
         </div>
         <div>
           <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">

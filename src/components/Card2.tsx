@@ -29,7 +29,7 @@ const Card2 = ({ title, des, icon }: Props) => {
             </h2>
             <p className="base">{des}</p>
             <span className="text-2xl text-designColor">
-              <a href= "https://twitter.com/GitHubEducation/status/1692993554421801460">
+              <a href= "https://github.com/shashwatmurawala">
                 <HiArrowRight />
               </a>
             </span>

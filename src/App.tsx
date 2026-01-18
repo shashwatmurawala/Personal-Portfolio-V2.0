@@ -1,4 +1,3 @@
-import React from 'react';
 import StarField from './components/StarField';
 import CustomCursor from './components/CustomCursor';
 import Navigation from './components/Navigation';

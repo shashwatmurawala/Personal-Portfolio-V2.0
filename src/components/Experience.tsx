@@ -1,89 +1,160 @@
-import { motion } from "framer-motion";
-import ResumeCard from "./ResumeCard";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const Experience = () => {
+interface ExperienceItem {
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  achievements: string[];
+}
+
+const Experience: React.FC = () => {
+  const experiences: ExperienceItem[] = [
+    {
+      title: 'Machine Learning Researcher',
+      company: 'Algoverse AI Research',
+      location: 'California, United States',
+      period: 'Sept. 2025 – Present',
+      achievements: [
+        'Researching optimal transport methods for cross-model steering vector transfer in large language models, with results aimed for submission to EACL SRW 2025, ICLR 2026, ACL 2026 and ICML 2026.',
+        'Investigating affine and nonlinear activation alignment mappings between open LLMs (Gemma, Qwen, Mistral, Llama) using 2-Wasserstein distance and Sinkhorn-regularized optimal-transport objectives.',
+      ],
+    },
+    {
+      title: 'Software Engineer',
+      company: 'Rocket Lab',
+      location: 'Auckland, New Zealand',
+      period: 'May 2025 – Aug. 2025',
+      achievements: [
+        'Designed and implemented an active pinging system integrated with a four-level Grafana dashboard, using Prometheus to monitor real-time infrastructure availability and automatically flag outages for instant detection.',
+        'Contributed to the development of a custom serialization package and optimized its encoder and decoder, reducing per-operation time by 25% and 80% respectively.',
+        'Contributed to the development of a high-performance internal messaging and streaming service, achieving 80% faster throughput compared to NATS for internal use cases.',
+        'Developed and implemented a C# WPF desktop application for real-time data visualization and animated overlays, used in Rocket Lab\'s YouTube livestreams during launches to display data and key milestones.',
+      ],
+    },
+    {
+      title: 'Software Developer',
+      company: 'Dayforce',
+      location: 'Toronto, Ontario',
+      period: 'May 2024 – Dec. 2024',
+      achievements: [
+        'Developed and implemented end-to-end integration testing for the Hyperscale Next-Gen application, ensuring reliability, identifying critical bugs early, and reducing QA cycles by 20%.',
+        'Supported and contributed to the development of a Kafka-based system as part of the Hyperscale project, which increased data processing capacity by 60% and reduced processing time by 40%.',
+        'Remediated 250+ security vulnerabilities identified by Veracode and SonarQube, ensuring compliance with industry standards and improving application security and code quality by 35%.',
+      ],
+    },
+    {
+      title: 'Data Analyst',
+      company: 'JANA Corporation',
+      location: 'Aurora, Ontario',
+      period: 'May 2023 – Aug. 2023',
+      achievements: [
+        'Developed a tool in Python, resulting in a 40% reduction in manual data processing efforts.',
+        'Conducted in-depth data analysis for SIMP-CRA Model resulting in a 25% increase in data retrieval and processing speed, leveraging Python and SQL.',
+        'Automated ETL processes for MidAmerican TIMP, reducing data processing time by approximately 30% and improving overall efficiency.',
+      ],
+    },
+  ];
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
-    >
-      <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2021 - Present</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Work Experience</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1250px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Software Developer"
-            subTitle="Dayforce (May 2024 - Dec 2024)"
-            result="North York"
-            des={
-              <>
-                • Remediated 100+ security vulnerabilities identified by Veracode and SonarQube, ensuring compliance with industry standards and enhancing application security and code quality.<br />
-                • Designed and implemented a high-performance streaming application, delivering real-time data processing and ensuring seamless user experience with scalable architecture, supporting 500K+ concurrent users.<br />
-                • Refactored and optimized existing C#/.NET codebases, enhancing performance by 30%, maintainability, and scalability by applying SOLID principles and reducing technical debt by 40%.
-              </>
-            }
-          />     
-          <ResumeCard
-            title="Data Analyst"
-            subTitle="JANA Corporation (May 2023 - Aug 2023)"
-            result="Remote"
-            des={
-              <>
-                • Conducting data analysis, research, report writing, and data loading tasks related to pipeline integrity management.<br />
-                • Developing software using Python and SQL for data processing and analysis.<br />
-                • Collaborating with JANA's teams to provide quality data and insights for gas distribution and transmission companies' integrity management programs.
-              </>
-            }
-          />
-        </div>
+    <section id="experience" style={{ minHeight: 'auto', paddingTop: '100px' }}>
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="section-title">Professional Experience</h2>
+
+          <div className="timeline">
+            {experiences.map((exp, index) => (
+              <motion.div
+                key={index}
+                className="timeline-item"
+                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2, duration: 0.5 }}
+              >
+                <div className="timeline-dot" />
+                <div className="glass-card">
+                  <div
+                    style={{
+                      marginBottom: '1rem',
+                    }}
+                  >
+                    <h3
+                      style={{
+                        fontSize: '1.5rem',
+                        marginBottom: '0.5rem',
+                      }}
+                    >
+                      {exp.title}
+                    </h3>
+                    <p
+                      style={{
+                        fontSize: '1.2rem',
+                        fontWeight: 600,
+                        fontStyle: 'italic',
+                        color: 'var(--color-star-glow)',
+                        marginBottom: '0.25rem',
+                      }}
+                    >
+                      {exp.company}
+                    </p>
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: window.innerWidth > 768 && index % 2 === 0 ? 'flex-end' : 'flex-start',
+                        gap: '1rem',
+                        fontSize: '0.9rem',
+                        color: 'rgba(248, 250, 252, 0.6)',
+                        flexWrap: 'wrap',
+                      }}
+                    >
+                      <span>📍 {exp.location}</span>
+                      <span>📅 {exp.period}</span>
+                    </div>
+                  </div>
+                  <ul
+                    style={{
+                      listStyle: 'none',
+                      padding: 0,
+                    }}
+                  >
+                    {exp.achievements.map((achievement, i) => (
+                      <li
+                        key={i}
+                        style={{
+                          marginBottom: '0.75rem',
+                          paddingLeft: '1.5rem',
+                          position: 'relative',
+                          color: 'rgba(248, 250, 252, 0.8)',
+                          lineHeight: 1.6,
+                        }}
+                      >
+                        <span
+                          style={{
+                            position: 'absolute',
+                            left: 0,
+                            color: 'var(--color-accent-violet)',
+                          }}
+                        >
+                          •
+                        </span>
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
-      <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2022 - Present</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Extracurricular Experience</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1250px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-        <ResumeCard
-            title="Board of Directors"
-            subTitle="Math Endowment Fund (Apr 2024 - Present)"
-            result="Remote"
-            des={
-              <>
-                • Engaging with stakeholders, including university faculty, alumni, and donors, to communicate the impact of the fund and foster continued support, resulting in a 25% increase in donor retention.<br />
-                • Collaborating with fellow board members to develop and implement investment strategies aimed at maximizing returns while mitigating risks.<br />
-                • Reviewing financial reports and performance metrics to assess the fund's progress towards its goals, achieving an average annual return of 8%.
-              </>
-            }
-          />  
-          <ResumeCard
-            title="Math Orientation Manager"
-            subTitle="University of Waterloo (Nov 2023 - Dec 2024)"
-            result="Waterloo"
-            des={
-              <>
-                • Worked alongside a team to guide Orientation leaders, orchestrating their training, scheduling, and planning for a range of events.<br />
-                • Completed all administrative tasks strictly in a strict manner following an outline from Waterloo Orientation to ensure preplanning for Orientation week was complete.
-              </>
-            }
-          /> 
-          <ResumeCard
-            title="Full Stack Web Development Internship Program"
-            subTitle="Edureka (Sep 2023 - Dec 2023)"
-            result="Remote"
-            des={
-              <>
-                • Actively improving my skills in creating responsive and interactive interfaces using React.js.<br />
-                • In the process of mastering Node.js and Express.js to build robust server-side applications efficiently.<br />
-                • Currently gaining expertise in MongoDB for effective data management.
-              </>
-            }
-          />  
-        </div>
-      </div>
-    </motion.div>
+    </section>
   );
 };
 

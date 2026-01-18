@@ -1,24 +1,36 @@
-import Banner from "./components/Banner";
-import Feature from "./components/Feature";
-import FooterBottom from "./components/FooterBottom";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
+import React from 'react';
+import StarField from './components/StarField';
+import CustomCursor from './components/CustomCursor';
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <main className="font-bodyFont w-full h-auto bg-bodyColor text-lightText">
-      <Navbar />
-      <div className="px-4">
-        <div className="max-w-screen-xl mx-auto">
-          <Banner />
-          <Feature />
-          <Projects />
-          <Resume />
-          <FooterBottom />
-        </div>
-      </div>
-    </main>
+    <div style={{ position: 'relative' }}>
+      {/* Animated Star Background */}
+      <StarField />
+
+      {/* Custom Cursor */}
+      <CustomCursor />
+
+      {/* Navigation */}
+      <Navigation />
+
+      {/* Main Content */}
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+    </div>
   );
 }
 

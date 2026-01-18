@@ -1,216 +1,123 @@
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const Skills = () => {
+const Skills: React.FC = () => {
+  const skillCategories = [
+    {
+      title: 'Languages',
+      skills: ['Python', 'Go', 'C++', 'C#', 'C', 'JavaScript', 'TypeScript', 'SQL', 'HTML/CSS', 'PromQL', 'LogQL', 'LINQ'],
+    },
+    {
+      title: 'ML & AI Frameworks',
+      skills: ['TensorFlow', 'PyTorch', 'pandas', 'NumPy', 'OpenCV', 'scikit-learn'],
+    },
+    {
+      title: 'Web Frameworks & Libraries',
+      skills: ['React', 'Angular', 'Express', 'Flask', 'WPF', 'jQuery', 'Bootstrap'],
+    },
+    {
+      title: 'DevOps Tools',
+      skills: ['Grafana', 'Kubernetes', 'ArgoCD', 'TeamCity', 'Docker', 'Apache Kafka', 'Jenkins', 'Terraform'],
+    },
+    {
+      title: 'Developer Tools',
+      skills: ['Git', 'IntelliJ IDEA', 'Postman', 'MongoDB Compass', 'Jupyter Notebook', 'SwaggerUI', 'Veracode'],
+    },
+  ];
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
-    >
-      <div className="w-full lgl:w-1/2">
-        <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px] uppercase">
-            Features
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold">Languages</h2>
-        </div>
-        <div className='className="mt-14 w-full flex flex-col gap-6'>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">C/C++</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">95%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Python</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">95%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">SQL</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[93%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">93%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Racket</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">90%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">HTML/CSS</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">90%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Linux</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">85%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">JavaScript</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">85%</span>
-              </motion.span>
-            </span>
-          </div>
-        </div>
-      </div>
+    <section id="skills" style={{ minHeight: 'auto', paddingTop: '100px' }}>
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="section-title">Skills & Technologies</h2>
 
-      <div className="w-full lgl:w-1/2">
-        <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px] uppercase">
-            Features
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold">Frameworks</h2>
-        </div>
-        <div className="flex flex-col gap-6">
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">React</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gap: '2rem',
+              maxWidth: '1200px',
+              margin: '0 auto',
+            }}
+          >
+            {skillCategories.map((category, index) => (
+              <motion.div
+                key={index}
+                className="glass-card"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                whileHover={{ scale: 1.02 }}
               >
-                <span className="absolute -top-7 right-0">95%</span>
-              </motion.span>
-            </span>
+                <h3
+                  style={{
+                    marginBottom: '1.5rem',
+                    textAlign: 'center',
+                    fontSize: '1.3rem',
+                  }}
+                >
+                  {category.title}
+                </h3>
+                <div
+                  style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    gap: '0.5rem',
+                  }}
+                >
+                  {category.skills.map((skill, i) => (
+                    <motion.span
+                      key={i}
+                      className="skill-badge"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {skill}
+                    </motion.span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
           </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">OpenCV</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[95%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">95%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">TensorFlow</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[92%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">92%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Git</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[90%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">90%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">MongoDB</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[85%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">85%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Node.js</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[70%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">70%</span>
-              </motion.span>
-            </span>
-          </div>
-          <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Bootstrap</p>
-            <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
-              <motion.span
-                initial={{ x: "-100%", opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                className="w-[60%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
-              >
-                <span className="absolute -top-7 right-0">60%</span>
-              </motion.span>
-            </span>
-          </div>
-        </div>
+
+          {/* Additional Info */}
+          <motion.div
+            className="glass-card"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+            style={{
+              marginTop: '3rem',
+              textAlign: 'center',
+              maxWidth: '800px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <p
+              style={{
+                fontSize: '1.1rem',
+                color: 'rgba(248, 250, 252, 0.8)',
+                lineHeight: 1.8,
+              }}
+            >
+              I'm passionate about <strong style={{ color: 'var(--color-accent-violet)' }}>AI and Machine Learning</strong>,
+              constantly exploring cutting-edge research in LLMs and optimal transport. My dual background
+              in <strong style={{ color: 'var(--color-accent-violet)' }}>Computer Science and Psychology</strong> gives
+              me a unique perspective on building intelligent systems that understand human behavior.
+            </p>
+          </motion.div>
+        </motion.div>
       </div>
-    </motion.div>
+    </section>
   );
 };
 

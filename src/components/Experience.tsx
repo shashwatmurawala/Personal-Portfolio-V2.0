@@ -63,7 +63,7 @@ const Experience: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.05 }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="section-title">Professional Experience</h2>
@@ -76,7 +76,13 @@ const Experience: React.FC = () => {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2, duration: 0.5 }}
+                transition={{
+                  delay: index * 0.05,
+                  type: 'spring',
+                  stiffness: 100,
+                  damping: 15,
+                  mass: 0.5
+                }}
               >
                 <div className="timeline-dot" />
                 <div className="glass-card">

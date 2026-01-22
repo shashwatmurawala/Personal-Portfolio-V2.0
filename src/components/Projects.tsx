@@ -65,7 +65,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.05 }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="section-title">Projects</h2>
@@ -83,10 +83,15 @@ const Projects = () => {
               <motion.div
                 key={index}
                 className="glass-card"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
+                transition={{
+                  delay: index * 0.03,
+                  type: 'spring',
+                  stiffness: 120,
+                  damping: 15
+                }}
                 whileHover={{ scale: 1.03 }}
                 style={{
                   display: 'flex',

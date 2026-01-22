@@ -123,6 +123,12 @@ h3 {
   color: var(--color-accent-violet);
 }
 
+/* Main Content */
+main {
+  position: relative;
+  z-index: 1;
+}
+
 /* Container */
 .container {
   max-width: var(--container-max-width);

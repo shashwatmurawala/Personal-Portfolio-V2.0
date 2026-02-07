@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="section-title">Skills & Technologies</h2>
@@ -51,7 +51,7 @@ const Skills: React.FC = () => {
                 className="glass-card"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 whileHover={{ scale: 1.02 }}
               >
@@ -92,7 +92,7 @@ const Skills: React.FC = () => {
             className="glass-card"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
             style={{
               marginTop: '3rem',

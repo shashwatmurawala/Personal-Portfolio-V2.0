@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
       icon: <FaLinkedin />,
       title: 'LinkedIn',
       value: 'Shashwat Murawala',
-      link: 'https://linkedin.com/in/shashwat-murawala',
+      link: 'https://www.linkedin.com/in/shashwatmurawala',
       color: '#0077b5',
     },
     {
